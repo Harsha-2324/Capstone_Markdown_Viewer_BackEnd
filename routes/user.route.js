@@ -112,7 +112,7 @@ router.post("/sendmail", async function (request, response) {
         to: user.email,
         subject: "Reset the Password",
         text: "Hi",
-        html: `<h1>Hi,</h1><h1>User ${user.username} <br> <a href="${clienturl}/changepassword/${user.email}">Please click here to reset the password</a> </h1>`,
+        html: `<h1>Hi,${user.username} <br> <a href="${clienturl}/changepassword/${user.email}">Please click here to reset the password</a> </h1>`,
       };
       transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
