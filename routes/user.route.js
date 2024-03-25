@@ -9,7 +9,7 @@ import {
   updateUserByemail,
 } from "../services/user.service.js";
 
-const clienturl = "https://strong-trifle-1cbfa2.netlify.app";
+const clienturl = "https://capstone-markdown-viewer-front-end.vercel.app";
 
 // const clienturl = "http://localhost:3000";
 
