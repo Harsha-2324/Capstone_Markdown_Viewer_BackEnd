@@ -110,9 +110,9 @@ router.post("/sendmail", async function (request, response) {
       var mailOptions = {
         from: process.env.EMAIL,
         to: user.email,
-        subject: "Reset the password",
+        subject: "Reset the Password",
         text: "Hi",
-        html: `<h1>User ${user.username} <a href="${clienturl}/changepassword/${user.email}">Please click here to reset the password</a> </h1>`,
+        html: `<h1>Hi,</h1><h1>User ${user.username} <br> <a href="${clienturl}/changepassword/${user.email}">Please click here to reset the password</a> </h1>`,
       };
       transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
@@ -128,7 +128,7 @@ router.post("/sendmail", async function (request, response) {
         }
       });
 
-      response.json({ message: "check your email" });
+      response.json({ message: "Check your email" });
     } else {
       response.status(500).json({ message: "User not found" });
     }
@@ -148,7 +148,7 @@ router.post("/changepassword/:email", async function (request, response) {
 
     const result = await updateUserByemail({ email, password1 });
     if (result) {
-      response.json({ message: "Reset the password successfully" });
+      response.json({ message: "Password Reset Successful" });
     } else {
       response.json({ message: "Something went wrong" });
     }
