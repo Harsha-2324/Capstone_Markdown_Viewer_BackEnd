@@ -13,7 +13,7 @@ Welcome to the Markdown Viewer Capstone Project! This project is a full-stack we
 
 ## FrontEnd GitHub Repository URL ⌛
 
-🔸*Click on the Badge to Check out My BackEnd GitHub Repository Here*👉🏻[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Harsha-2324/Capstone_Markdown_Viewer_FrontEnd.git)
+🔸*Click on the Badge to Check out My FrontEnd GitHub Repository Here*👉🏻[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Harsha-2324/Capstone_Markdown_Viewer_FrontEnd.git)
 
 ## Video Demo 🎥
 
